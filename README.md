@@ -11,3 +11,5 @@ Quantizes played drums and samples in real time. Has velocity support and a metr
 ## Recorder
 
 Records multiple sounds (either mono or stereo) to its own file, just like a real recorder, so you can mix your composition later. Also displays the duration of the recording. See `test_patch.pd` for instructions.
+
+#### Tip: some abstractions may not work properly without the `u` folder, which stands for `utils` and contains some useful tools that I often use to build patches.
