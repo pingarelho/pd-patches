@@ -1,0 +1,15 @@
+#N canvas 194 334 950 313 12;
+#X obj 20 20 inlet;
+#X obj 20 50 symbol seq_in\$1;
+#X obj 179 30 array define -yrange 0 127 seq_quantum\$1 32;
+#X obj 20 170 pack f \$1;
+#X obj 20 200 s seq_write_array;
+#X obj 20 80 ../u/receiver;
+#X obj 20 110 ../u/value_spigot seq_play 1;
+#X obj 20 140 ../u/value_spigot seq_rec 1;
+#X connect 0 0 1 0;
+#X connect 1 0 5 0;
+#X connect 3 0 4 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 3 0;
